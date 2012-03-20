@@ -30,6 +30,8 @@ BEGIN
         print "No \$OUT, use default path: ", DEFAULT_PATH, "\n";
     }
 
+    print "\n\n";
+
     while (my $line = <STDIN>) {
         if ($line =~ /\[(.*)\]/) {
             check_file($1);
